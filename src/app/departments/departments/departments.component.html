@@ -1,0 +1,19 @@
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Department Id</th>
+            <th>Department Name</th>
+            <th>Department Description</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr (click)="onSelect(depObj)" *ngFor="let depObj of departmentDetails">
+            <td>{{depObj.departmentId}}</td>
+            <td>{{depObj.departmentName}}</td>
+            <td>{{depObj.departmentDesc}}</td>
+        </tr>
+    </tbody>
+    </table>
+   
